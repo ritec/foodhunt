@@ -1,25 +1,18 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
+import Login from "./app/ios/login";
 
-import React, { Component } from 'react';
-import { NavigatorIOS, Text } from 'react-native';
-import { AppRegistry } from 'react-native';
+import React, { Component } from "react";
+import { AppRegistry, NavigatorIOS } from "react-native";
 
-import Login from './app/ios/login';
-
-export default class App extends Component<{}> {
+export default class foodhunt extends Component {
   render() {
     return (
       <NavigatorIOS
-        navigatorBarHidden={true} 
-        initialRoute={{ component: Login, title: 'Login',}}
-        style={{flex: 1}}
+        navigationBarHidden={true}
+        initialRoute={{ title: "Login", component: Login }}
+        style={{ flex: 1 }}
       />
     );
   }
 }
 
-AppRegistry.registerComponent('foodhunt', () => foodhunt);
+AppRegistry.registerComponent("foodhunt", () => foodhunt);

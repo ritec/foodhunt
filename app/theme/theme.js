@@ -11,9 +11,11 @@ var styles = StyleSheet.create({
   },
   left: {
     justifyContent: 'flex-start',
+    width: 75,
   },
   right: {
     justifyContent: 'flex-end',
+    width: 75
   },
   btn: {
     borderWidth: 1,
@@ -43,9 +45,10 @@ var styles = StyleSheet.create({
   },
   header: {
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     height: 55,
     marginTop: 10,
+    flexDirection: 'row',
   },
 })
 
